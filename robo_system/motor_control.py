@@ -23,7 +23,7 @@ def calculate_wheel_speed(target_speed: int, terrain: str = "flat") -> int:
         return int(target_speed * 0.8)
     else:
         # พื้นเรียบ วิ่งได้เต็มความเร็ว
-        return 0
+        return target_speed
 
 def get_steering_angle(direction: str) -> int:
     """
@@ -47,6 +47,3 @@ if __name__ == "__main__":
     assert get_steering_angle("left") == -45
     assert get_steering_angle("straight") == 0
     print("✅ Motor Control: ผ่านการทดสอบทั้งหมด!")
-
-def activate_turbo():
-    print("TURBO CHARGING... ERROR 500 INCOMPLETE")
