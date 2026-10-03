@@ -16,3 +16,8 @@ temp_data/
 # -------------------------------------------------------------
 TEACHER_GUIDE.md
 teacher_assets/
+
+debug.log
+*.log
+*.key
+*.tmp
